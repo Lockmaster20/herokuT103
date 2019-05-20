@@ -1,38 +1,98 @@
-body{
-  background-color: #b3ffe6;
+html,body,h1,h2,h3,h4,h5,h6{
+  background-color: #696969;
   text-align: center;
+  font-family: "Console", sans-serif;
 }
 
+legend{
+  color: white;
+  width: 220px;
+  font-weight: bold;
+  background-color: #333;
+  border: 1px solid;
+  border-color: #969696;
+}
+
+fieldset {
+  width: 256px;
+  padding: 50px;
+  background-color: #4f4f4f;
+  border: 5px groove;
+  border-color: #969696;
+}
+
+/* The navigation menu */
 .navbar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
+  overflow: hidden;
+  background-color: #333;
 }
 
-/* Navbar links */
+/* Navigation links */
 .navbar a {
   float: left;
+  font-size: 16px;
+  color: white;
   text-align: center;
-  padding: 12px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbarr a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #969696;
+  color: black;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #969696;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
   color: white;
   text-decoration: none;
-  font-size: 17px;
 }
 
-/* Navbar links on mouse-over */
-.navbar a:hover {
-  background-color: #000;
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
 }
 
-/* Current/active navbar link */
-.active {
-  background-color: #4CAF50;
-}
-
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
 }
