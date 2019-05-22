@@ -3,6 +3,7 @@
 <head>
   <title>Escola Secundária de Maximinos</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
@@ -10,42 +11,45 @@
 <div class="navbar">
   <a href="/">Home</a>
   <div class="subnav">
-    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn"><i class="fas fa-leaf"></i> Entradas <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#company">Company</a>
-      <a href="#team">Team</a>
-      <a href="#careers">Careers</a>
+      <a href="#company">Carne</a>
+      <a href="#team">Marisco</a>
+      <a href="#careers">Vegetais</a>
     </div>
   </div>
   <div class="subnav">
-    <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn"><i class="fas fa-utensils"></i> Prato Principal <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#bring">Bring</a>
-      <a href="#deliver">Deliver</a>
-      <a href="#package">Package</a>
-      <a href="#express">Express</a>
+      <a href="#bring">Carne</a>
+      <a href="#deliver">Peixe</a>
+      <a href="#package">Marisco</a>
+      <a href="#express">Arroz</a>
+      <a href="#express">Massa</a>
+      <a href="#express">Batatas</a>
     </div>
   </div>
   <div class="subnav">
-    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn"><i class="fas fa-birthday-cake"></i> Doces e Sobremesas <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#link1">Link 1</a>
-      <a href="#link2">Link 2</a>
-      <a href="#link3">Link 3</a>
-      <a href="#link4">Link 4</a>
+      <a href="#link1">Chocolate</a>
+      <a href="#link2">Caramelo</a>
+      <a href="#link3">Fruta</a>
+      <a href="#link4">Queijo</a>
     </div>
   </div>
   <div class="navbarr">
-    <a href="/login">Login</a>
-    <a href="/registo">Registar</a>
+    <a href="/login"><i class="fas fa-unlock-alt"></i> Login</a>
+    <a href="/registo"><i class="fas fa-user-alt"></i> Registar</a>
   </div>
 </div>
 
 {% block conteudo %}
 {% endblock %}
 
-
-<h3>&copy 2019 Diogo Fernandes</h3>
+<div class="footer">
+  <p>&copy 2019 Diogo Fernandes</p>
+</div>
 
 </body>
 </html>
