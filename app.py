@@ -6,6 +6,22 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/entradas_carne')
+def entradas_carne():
+    return render_template('entradas_carne.html')
+
+@app.route('/ec')
+def ec():
+    return render_template('ec.html')
+
+@app.route('/em')
+def em():
+    return render_template('em.html')
+
+@app.route('/ev')
+def ev():
+    return render_template('ev.html')
+
 @app.route('/login')
 def login():
     return render_template('login.html')
