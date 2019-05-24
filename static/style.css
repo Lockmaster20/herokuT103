@@ -10,6 +10,12 @@ h1,h2,h3,h4,h5,h6{
 
 /* Test */
 
+.column {
+  float: left;
+  width: 42%;
+  padding: 50px 100px;
+}
+
 a{
   text-decoration: none;
   color: white;
@@ -17,7 +23,7 @@ a{
 
 .container {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .image {

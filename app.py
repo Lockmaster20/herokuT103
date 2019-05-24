@@ -8,11 +8,19 @@ def index():
 
 @app.route('/entradas_carne')
 def entradas_carne():
-    return render_template('entradas_carne.html')
+    return render_template('entradas/entradas_carne.html')
 
-@app.route('/ec')
-def ec():
-    return render_template('ec.html')
+@app.route('/bcf')
+def bcf():
+    return render_template('entradas/entradas_carne/bcf.html')
+
+@app.route('/mom')
+def mom():
+    return render_template('entradas/entradas_carne/mom.html')
+
+@app.route('/cr')
+def cr():
+    return render_template('entradas/entradas_carne/cr.html')
 
 @app.route('/em')
 def em():
