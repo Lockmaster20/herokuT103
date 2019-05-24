@@ -155,6 +155,23 @@ fieldset {
   display: block;
 }
 
+/* Receitas */
+.descricao {
+  float: left;
+  width: 63.7%;
+  padding: 10px;
+  height: 500px;
+  text-align: justify;
+}
+
+.ingredientes {
+  float: right;
+  width: 20.7%;
+  padding: 10px;
+  height: 500px;
+  text-align: left;
+}
+
 /* Footer */
 .footer {
   position: fixed;
