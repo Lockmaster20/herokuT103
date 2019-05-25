@@ -66,6 +66,16 @@ def bgb():
 
 
 
+@app.route('/sobremesas_caramelo')
+def sobremesas_caramelo():
+    return render_template('sobremesas/sobremesas_caramelo.html')
+
+@app.route('/sobremesas_caramelo/sbctcs')
+def sbctcs():
+    return render_template('sobremesas/sobremesas_caramelo/sbctcs.html')
+
+
+
 @app.route('/login')
 def login():
     return render_template('login.html')
