@@ -66,6 +66,10 @@ def bgb():
 
 
 
+
+
+
+
 @app.route('/sobremesas_caramelo')
 def sobremesas_caramelo():
     return render_template('sobremesas/sobremesas_caramelo.html')
@@ -73,6 +77,76 @@ def sobremesas_caramelo():
 @app.route('/sobremesas_caramelo/sbctcs')
 def sbctcs():
     return render_template('sobremesas/sobremesas_caramelo/sbctcs.html')
+
+
+
+@app.route('/sobremesas_chocolate')
+def sobremesas_chocolate():
+    return render_template('sobremesas/sobremesas_chocolate.html')
+
+@app.route('/sobremesas_chocolate/bacb')
+def bacb():
+    return render_template('sobremesas/sobremesas_chocolate/bacb.html')
+
+@app.route('/sobremesas_chocolate/bbd')
+def bbd():
+    return render_template('sobremesas/sobremesas_chocolate/bbd.html')
+
+@app.route('/sobremesas_chocolate/pmc')
+def pmc():
+    return render_template('sobremesas/sobremesas_chocolate/pmc.html')
+
+@app.route('/sobremesas_chocolate/sf')
+def sf():
+    return render_template('sobremesas/sobremesas_chocolate/sf.html')
+
+@app.route('/sobremesas_chocolate/tcb')
+def tcb():
+    return render_template('sobremesas/sobremesas_chocolate/tcb.html')
+
+
+
+@app.route('/sobremesas_fruta')
+def sobremesas_fruta():
+    return render_template('sobremesas/sobremesas_fruta.html')
+
+@app.route('/sobremesas_fruta/fmm')
+def fmm():
+    return render_template('sobremesas/sobremesas_fruta/fmm.html')
+
+@app.route('/sobremesas_fruta/lmbm')
+def lmbm():
+    return render_template('sobremesas/sobremesas_fruta/lmbm.html')
+
+@app.route('/sobremesas_fruta/mmc')
+def mmc():
+    return render_template('sobremesas/sobremesas_fruta/mmc.html')
+
+@app.route('/sobremesas_fruta/pfvnvb')
+def pfvnvb():
+    return render_template('sobremesas/sobremesas_fruta/pfvnvb.html')
+
+
+
+@app.route('/sobremesas_queijo')
+def sobremesas_queijo():
+    return render_template('sobremesas/sobremesas_queijo.html')
+
+@app.route('/sobremesas_queijo/brv')
+def brv():
+    return render_template('sobremesas/sobremesas_queijo/brv.html')
+
+@app.route('/sobremesas_queijo/cc')
+def cc():
+    return render_template('sobremesas/sobremesas_queijo/cc.html')
+
+@app.route('/sobremesas_queijo/pcaf')
+def pcaf():
+    return render_template('sobremesas/sobremesas_queijo/pcaf.html')
+
+@app.route('/sobremesas_queijo/t')
+def t():
+    return render_template('sobremesas/sobremesas_queijo/t.html')
 
 
 
