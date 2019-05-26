@@ -66,7 +66,83 @@ def bgb():
 
 
 
+@app.route('/prato_principal_carne')
+def prato_principal_carne():
+    return render_template('prato_principal/prato_principal_carne.html')
 
+@app.route('/prato_principal_carne/cp_carne')
+def cp_carne():
+    return render_template('prato_principal/prato_principal_carne/cp_carne.html')
+
+@app.route('/prato_principal_carne/fcb')
+def fcb():
+    return render_template('prato_principal/prato_principal_carne/fcb.html')
+
+
+
+@app.route('/prato_principal_peixe')
+def prato_principal_peixe():
+    return render_template('prato_principal/prato_principal_peixe.html')
+
+@app.route('/prato_principal_peixe/beca')
+def beca():
+    return render_template('prato_principal/prato_principal_peixe/beca.html')
+
+@app.route('/prato_principal_peixe/cp_peixe')
+def cp_peixe():
+    return render_template('prato_principal/prato_principal_peixe/cp_peixe.html')
+
+@app.route('/prato_principal_peixe/cs')
+def cs():
+    return render_template('prato_principal/prato_principal_peixe/cs.html')
+
+
+
+@app.route('/prato_principal_marisco')
+def prato_principal_marisco():
+    return render_template('prato_principal/prato_principal_marisco.html')
+
+@app.route('/prato_principal_marisco/lspmml')
+def lspmml():
+    return render_template('prato_principal/prato_principal_marisco/lspmml.html')
+
+@app.route('/prato_principal_marisco/pa')
+def pa():
+    return render_template('prato_principal/prato_principal_marisco/pa.html')
+
+
+
+@app.route('/prato_principal_arroz')
+def prato_principal_arroz():
+    return render_template('prato_principal/prato_principal_arroz.html')
+
+@app.route('/prato_principal_arroz/aff')
+def aff():
+    return render_template('prato_principal/prato_principal_arroz/aff.html')
+
+
+
+@app.route('/prato_principal_massa')
+def prato_principal_massa():
+    return render_template('prato_principal/prato_principal_massa.html')
+
+@app.route('/prato_principal_massa/emt')
+def emt():
+    return render_template('prato_principal/prato_principal_massa/emt.html')
+
+@app.route('/prato_principal_massa/ppts')
+def ppts():
+    return render_template('prato_principal/prato_principal_massa/ppts.html')
+
+
+
+@app.route('/prato_principal_batatas')
+def prato_principal_batatas():
+    return render_template('prato_principal/prato_principal_batatas.html')
+
+@app.route('/prato_principal_batatas/esbdb')
+def esbdb():
+    return render_template('prato_principal/prato_principal_batatas/esbdb.html')
 
 
 
