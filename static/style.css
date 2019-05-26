@@ -10,10 +10,15 @@ h1,h2,h3,h4,h5,h6{
 
 /* Test */
 
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
 .column {
   float: left;
   width: 42%;
   padding: 50px 100px;
+  margin-bottom: 100px;
 }
 
 a{
@@ -160,7 +165,7 @@ fieldset {
   float: left;
   width: 63.7%;
   padding: 10px;
-  height: 500px;
+  height: auto;
   text-align: justify;
 }
 
@@ -168,7 +173,7 @@ fieldset {
   float: right;
   width: 20.7%;
   padding: 10px;
-  height: 500px;
+  height: auto;
   text-align: left;
 }
 
@@ -181,4 +186,32 @@ fieldset {
   background-color: #2aa021;
   color: white;
   text-align: left;
+}
+
+/* Footer Media */
+
+.social{
+  font-size: 30px;
+  padding: 5px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  text-align: center;
+  width: 30px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  text-align: center;
+  width: 30px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  text-align: center;
+  width: 30px;
 }
