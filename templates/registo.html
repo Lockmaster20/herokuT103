@@ -1,30 +1,30 @@
 {% extends 'layout.html' %}
 {% block titulo %}
-<title>Criar Nova Conta</title>
+    <title>Registo</title>
 {% endblock %}
 
 {% block conteudo %}
-<center>
-    <h1>Criar nova Conta</h1>
-    <form method="post">
-        <fieldset>
-            <legend>Introduza os seus dados</legend>
-            <h4>Utilizador</h4>
-            <input type="text" name="utilizador" required>
-            <p><br></p>
-            <h4>Endereço de Email</h4>
-            <input type="text" name="email" required>
-            <p><br></p>
-            <h4>Palavra-Passe</h4>
-            <input type="password" name="passe" required>
-            <p><br></p>
-            <h4>Confirme a Passe</h4>
-            <input type="password" name="cpasse" required>
-            <p><br></p>
-            <input type="submit" value="Submeter">
-        </fieldset>
-    </form>
 
-    {% if erro %}<h5>{{ erro }}</h5>{% endif %}
+<h1>Criar nova Conta</h1>
+<center>
+<fieldset>
+    <legend>Introduza os seus dados</legend>
+    <form method="post">
+        <h4>Utilizador</h4>
+        <input type="text" name="utilizador" required>
+        <h4>Endereço de Email</h4>
+        <input type="text" name="email" required>
+        <h4>Palavra-Passe</h4>
+        <input type="password" name="passe" required>
+        <h4>Confirme a Passe</h4>
+        <input type="password" name="cpasse" required>
+        <p><br></p>
+        <input type="submit" name="submeter" required>
+    </form>
+</fieldset>
 </center>
+{% if erro %}
+<h7>{{ erro }}</h7>
+{% endif %}
+
 {% endblock %}
