@@ -49,6 +49,7 @@ def route():
             erro = 'A palavra passe não coincide.'
         else:
             gravar(v1, v2, v3)
+            erro = 'Conta criada.'
     return render_template('registo.html', erro=erro)
 
 def log(v1, v2):
@@ -93,6 +94,7 @@ def npasse():
             erro = 'A palavra passe não coincide.'
         else:
             alterar(v1, v2)
+            erro = 'A palavra passe foi alterada com sucesso.'
     return render_template('npasse.html', erro=erro)
 
 def apagar(v1):
