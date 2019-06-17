@@ -74,8 +74,7 @@ def login():
     return render_template('login.html', erro=erro)
 
 def alterar(v1, v2):
-    import sqlite3
-    ficheiro = sqlite3.connect('db/Utilizadores.db')
+    ficheiro = herokudb()
     db = ficheiro.cursor()
     db.execute("UPDATE usr SET passe = %s WHERE nome= %s", (v2, v1))
     ficheiro.commit()
